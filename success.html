@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-DarkGrey flex items-center justify-center md:h-[100vh]">
+    <div class="first font-robo flex items-center md:justify-center">
+      <section class="bg-White container rounded-2xl md:w-96 md:h-[400px]">
+        <div class="px-5 md:p-10">
+          <div class="mt-24 md:mt-0 pb-40 md:pb-0">
+            <img
+              src="./images/icon-success.svg"
+              class="w-12 md:w-10 h-12 md:h-10"
+              alt="suc"
+            />
+
+            <div class="tanks pt-4 md:pb-5">
+              <h2 class="text-4xl md:text-5xl py-3 w-60 md:w-64 font-bold">
+                Thanks for subscribing!
+              </h2>
+              <p class="w-64 md:w-72 text-xs font-medium leading-5">
+                A confirmation email has been sent to
+                <span class="font-bold"> ash@loremcompany.com</span>. Please
+                open it and click the button inside to confirm your
+                subscription.
+              </p>
+            </div>
+          </div>
+          <div class="pb-10 md:pb-0">
+            <button
+              id="btn"
+              class="w-72 py-3 rounded-lg text-White bg-DarkGrey hover:bg-gradient-to-r from-Pink hover:to-Orange"
+              type="button"
+            >
+              Dismiss message
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="dismiss.js"></script>
+  </body>
+</html>
