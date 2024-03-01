@@ -1,5 +1,7 @@
 const  button = document.querySelector('#btn');
 
+document.querySelector('.span').innerHTML = sessionStorage.getItem('emailValue');
+
 button.addEventListener('click', (e)=> {
     e.preventDefault();
     

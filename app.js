@@ -1,3 +1,5 @@
+export const email = document.querySelector('.mail');
+
 const button = document.querySelector('#btn');
 
 button.addEventListener('click', (e)=> {
@@ -5,7 +7,6 @@ button.addEventListener('click', (e)=> {
 
  const validEmail = document.querySelector('.valid');
  const email = document.querySelector('.mail');
-//  const showValid = document.querySelector('.show');
  let url = '/success.html';
 
  let success = ()=> {
@@ -19,6 +20,7 @@ button.addEventListener('click', (e)=> {
         email.style.color = '#d57473'
     }else {
     window.location.href = url;
+    window.sessionStorage.setItem('emailValue',);
  }
  }
 
