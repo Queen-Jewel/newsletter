@@ -1,5 +1,3 @@
-export const email = document.querySelector('.mail');
-
 const button = document.querySelector('#btn');
 
 button.addEventListener('click', (e)=> {
