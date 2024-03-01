@@ -1,6 +1,8 @@
 const  button = document.querySelector('#btn');
 
-document.querySelector('.span').innerHTML = sessionStorage.getItem('emailValue');
+const emailValue = window.sessionStorage.getItem('emailValue');
+
+document.querySelector('.span').innerText = emailValue;
 
 button.addEventListener('click', (e)=> {
     e.preventDefault();

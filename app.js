@@ -8,7 +8,7 @@ button.addEventListener('click', (e)=> {
  let url = '/success.html';
 
  let success = ()=> {
-    const emailValue = email.value;
+    const emailValue = email.value.trim();
 
 
     if(!/@/.test(emailValue) || !emailValue){
@@ -18,7 +18,7 @@ button.addEventListener('click', (e)=> {
         email.style.color = '#d57473'
     }else {
     window.location.href = url;
-    window.sessionStorage.setItem('emailValue',);
+    window.sessionStorage.setItem('emailValue', emailValue);
  }
  }
 
